@@ -7,6 +7,20 @@
     border-radius: 5px;
     color: #003566;
     box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+    animation: calltoaction 1.8s infinite;
+  }
+  @keyframes calltoaction {
+    0% {
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    50% {
+      box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.25);
+    }
+
+    100% {
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    }
   }
 
   .loader {
@@ -18,5 +32,28 @@
     background: #ffbe0b;
     border-radius: 50px;
     color: #fff;
+    animation: loader 8s infinite;
+  }
+
+  @keyframes loader {
+    0% {
+      background: #ffbe0b;
+    }
+
+    25% {
+      background: #ff0b0b;
+    }
+
+    50% {
+      background: #ff0bbe;
+    }
+
+    75% {
+      background: #750bff;
+    }
+
+    100% {
+      background: #ffbe0b;
+    }
   }
 }
